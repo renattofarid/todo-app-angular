@@ -1,0 +1,28 @@
+<form [formGroup]="form" (ngSubmit)="login()">
+  <pre>
+    {{ form.value | json}}
+  </pre>
+  <div class="flex flex-col gap-2">
+    <login-input
+      [type]="'text'"
+      [placeholder]="'Usuario'"
+      [name]="'user'"
+      formControlName="user"
+      required
+      ></login-input>
+      <!-- (onInput)="onInput($event)" -->
+    <login-input
+      [type]="'password'"
+      [placeholder]="'Contraseña'"
+      [name]="'password'"
+      formControlName="password"
+      required
+      ></login-input>
+      <!-- (onInput)="onInput($event)" -->
+    <login-button
+      [text]="'Iniciar sesión'"
+      [type]="'submit'"
+      />
+      <!-- (onClick)="login()" -->
+  </div>
+</form>

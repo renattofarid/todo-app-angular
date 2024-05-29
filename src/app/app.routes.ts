@@ -1,5 +1,6 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './views';
+import { NgModule } from '@angular/core';
 
 export const lazyRoutes: Routes = [
   {
@@ -15,3 +16,9 @@ export const lazyRoutes: Routes = [
 ];
 
 export const routes: Routes = lazyRoutes;
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

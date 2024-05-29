@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
     <button
       [type]="type"
       [disabled]="disabled"
-      class="w-full bg-[#0575E6] hover:bg-blue-700 text-white font-light py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline disabled:opacity-50 disabled:cursor-not-allowed"
+      class="w-full bg-[#0575E6] hover:bg-blue-700 text-white font-light py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline disabled:opacity-70 disabled:cursor-not-allowed"
       (click)="onClick.emit()"
     >
       {{ text }}

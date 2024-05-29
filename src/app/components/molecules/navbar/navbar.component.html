@@ -1,0 +1,17 @@
+<header
+  class="bg-white dark:bg-black h-[96px] py-6 px-8 border-b border-[#E9EAEC]"
+>
+  <div class="flex items-center justify-end p-4 gap-2" *ngIf="user$ | async">
+    <div
+      class="w-8 h-8 rounded-full bg-[#0575E6] flex items-center justify-center text-white text-sm font-bold leading-[140%] tracking-[0.2px]"
+    >
+      {{ name | slice : 0 : 1 | uppercase
+      }}{{ name | slice : 1 : 2 | uppercase }}
+    </div>
+    <div
+      class="text-[#111827] dark:text-white text-xs font-bold leading-[140%]"
+    >
+      {{ name }}
+    </div>
+  </div>
+</header>

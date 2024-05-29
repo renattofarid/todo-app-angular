@@ -10,6 +10,7 @@ export class AuthService {
 
   users: User[] = [
     {
+      id: '1234-abcd-5678-efgh',
       name: 'Renatto Perleche',
       user: 'renattofarid',
       password: 'password',
@@ -17,6 +18,7 @@ export class AuthService {
       image: 'https://avatars.githubusercontent.com/u/47273253?v=4',
     },
     {
+      id: '5678-efgh-1234-abcd',
       name: 'Karl Navarro',
       user: 'karlnavarro',
       password: 'password',

@@ -1,0 +1,12 @@
+<div class="w-full flex flex-col gap-4 p-4">
+  <new-task></new-task>
+
+  <div class="flex flex-row gap-4">
+    <div class="border-2 border-[#0575E6] rounded-xl w-full p-3">
+      <app-container-tasks [type]="todo"></app-container-tasks>
+    </div>
+    <div class="border-2 border-[#0575E6] rounded-xl w-full p-3">
+      <app-container-tasks [type]="done"></app-container-tasks>
+    </div>
+  </div>
+</div>

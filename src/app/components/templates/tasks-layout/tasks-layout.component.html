@@ -1,0 +1,44 @@
+<main class="w-full flex flex-row">
+  <!-- {/* Sidebar */} -->
+  <div
+    class="bg-[#0575E6] dark:bg-black min-w-[250px] flex flex-col h-screen py-6 px-8 justify-between gap-6 border-r border-[#E9EAEC]"
+  >
+    <div class="w-full flex justify-center">
+      <img src="/img/logo.svg" alt="entelgy-logo" class="h-8 text-center" />
+    </div>
+
+    <div class="h-full w-full">
+      <div class="flex flex-col">
+        <a
+          class="flex items-center gap-2 py-2 px-4 rounded-[10px] text-sm text-white font-bold leading-[160%] tracking-[0.2px] hover:bg-[#0062c3] transition duration-500 ease-in-out cursor-pointer"
+          routerLink="/tasks"
+        >
+          <i class="fas fa-tasks"></i>
+          <h1 class="font-semibold text-lg">Tareas</h1>
+        </a>
+      </div>
+    </div>
+
+    <button
+      class="py-[15px] px-[24px] rounded-[10px] border border-[#0575E6] bg-white dark:border-white self-stretch text-sm text-[#0575E6] font-bold leading-[160%] tracking-[0.2px] hover:bg-[#ffffff73] transition duration-500 ease-in-out"
+      (click)="logout()"
+    >
+      Salir
+    </button>
+  </div>
+
+  <!-- {/* Content Principal */} -->
+  <div
+    class="flex-1 flex flex-col overflow-hidden h-screen bg-[#0575E6] overflow-y-scroll"
+  >
+    <!-- {/* Navbar */} -->
+    <navbar />
+    <main
+      class="flex-1 overflow-x-hidden overflow-y-auto bg-[#fafafa] dark:bg-[#2c2c2c] pt-8"
+    >
+      <div class="mx-6 rounded-2xl bg-white dark:bg-black h-auto">
+        <ng-content class=""></ng-content>
+      </div>
+    </main>
+  </div>
+</main>

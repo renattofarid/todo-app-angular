@@ -6,17 +6,10 @@ import { LoginGridComponent } from '../../components/organism';
   selector: 'app-login',
   standalone: true,
   imports: [AuthLayoutComponent, LoginGridComponent],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css',
+  template: `
+    <app-auth-layout>
+      <login-grid></login-grid>
+    </app-auth-layout>
+  `,
 })
-export class LoginComponent {
-  constructor() {}
-
-  login() {
-    console.log('Login');
-  }
-
-  onInput(value: string) {
-    console.log(value);
-  }
-}
+export class LoginComponent {}

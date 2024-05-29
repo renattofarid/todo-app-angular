@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="createTask()">
+  <h1 class="text-xl font-bold">Nueva tarea</h1>
+  <div class="w-full flex flex-row justify-start items-center py-3">
+    <input
+      class="w-3/4 p-2 border border-gray-300 rounded"
+      type="text"
+      placeholder="Agrega una nueva tarea"
+      formControlName="title"
+    />
+    <button class="p-2 bg-blue-500 text-white rounded ml-2" type="submit">
+      Añadir
+    </button>
+  </div>
+</form>

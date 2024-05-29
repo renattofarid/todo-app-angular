@@ -12,3 +12,7 @@ export const loginSuccess = createAction(
 );
 
 export const loginFailure = createAction('[Login View] Login Failure');
+
+export const logout = createAction('[Tasks View] Logout');
+
+export const logoutSuccess = createAction('[Tasks View] Logout Success');

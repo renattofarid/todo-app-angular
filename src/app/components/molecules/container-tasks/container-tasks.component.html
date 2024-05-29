@@ -1,0 +1,9 @@
+<h1 class="text-center">
+  {{ type | titlecase}}:
+  <span class="font-semibold">{{ tasks.length }}</span>
+</h1>
+<ul>
+  <li *ngFor="let task of tasks">
+    <item-task [task]="task"></item-task>
+  </li>
+</ul>

@@ -19,7 +19,6 @@ export const AuthGuard: CanActivateFn = (route, state) => {
 
   let isAuth = false;
   user$.subscribe(({ user }) => {
-    console.log(user);
     if (user) {
       isAuth = true;
     }

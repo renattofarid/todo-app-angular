@@ -85,7 +85,6 @@ export const tasksReducer = createReducer(
 
   on(TasksActions.addTask, (state, { task, userId }) => {
     const tasks = localStorage.getItem('tasks');
-    console.log({ tasks });
     if (!tasks)
       return {
         ...state,
@@ -98,7 +97,6 @@ export const tasksReducer = createReducer(
       }
       return log;
     });
-    console.log({ newLogs: logs });
 
     localStorage.setItem(
       'tasks',
